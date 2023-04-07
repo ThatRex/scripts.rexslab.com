@@ -13,7 +13,7 @@ $scriptUrls = @{
 }
 
 function DownloadAndExecuteScript([string]$url) {
-    New-Item -Path $workDir -ItemType Directory | Out-Null
+    New-Item -Path $workDir -ItemType Directory -ErrorAction SilentlyContinue | Out-Null
     $extension = [System.IO.Path]::GetExtension($url)
     $scriptName = [System.IO.Path]::GetFileNameWithoutExtension($url)
     $scriptPath = "$workDir/$scriptName$extension"
