@@ -1,11 +1,11 @@
-$name = "scripts.rexslab.com"
-$workDir = "$env:TEMP/$name"
-
 param(
     [string]$script
 )
 
 if (!$script) { $script = $env:script }
+
+$name = "scripts.rexslab.com"
+$workDir = "$env:TEMP/$name"
 
 $scriptUrls = @{
     "voicemeeter-no-crackle"  = "https://raw.githubusercontent.com/ThatRex/voicemeeter-no-crackle/main/voicemeeter-no-crackle.bat";
