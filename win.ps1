@@ -2,7 +2,7 @@ $name = "scripts.rexslab.com"
 $workDir = "$env:TEMP/$name"
 
 param(
-    [string]$Script
+    [string]$script
 )
 
 $scriptUrls = @{
@@ -31,7 +31,7 @@ function DownloadAndExecuteScript([string]$url) {
     }
 }
 
-if (-not $Script) {
+if (-not $script) {
     $keys = $scriptUrls.Keys
     $index = 1
     $menu = @()
@@ -60,11 +60,11 @@ if (-not $Script) {
         }
     } while ($true)
 }
-elseif ($Script.StartsWith("http")) {
-    DownloadAndExecuteScript($Script)
+elseif ($script.StartsWith("http")) {
+    DownloadAndExecuteScript($script)
 }
-elseif ($scriptUrls.ContainsKey($Script)) {
-    $url = $scriptUrls[$Script]
+elseif ($scriptUrls.ContainsKey($script)) {
+    $url = $scriptUrls[$script]
     DownloadAndExecuteScript($url)
 }
 else {
