@@ -72,3 +72,5 @@ elseif ($scriptUrls.ContainsKey($script)) {
 else {
     Write-Host "Script not found"
 }
+
+$env:script = $null
