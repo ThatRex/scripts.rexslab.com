@@ -5,6 +5,8 @@ param(
     [string]$script
 )
 
+if (!$script) { $script = $env:script }
+
 $scriptUrls = @{
     "voicemeeter-no-crackle"  = "https://raw.githubusercontent.com/ThatRex/voicemeeter-no-crackle/main/voicemeeter-no-crackle.bat";
     "windows-virtual-monitor" = "https://raw.githubusercontent.com/ThatRex/windows-virtual-monitor/main/windows-virtual-monitor.ps1";
