@@ -56,6 +56,7 @@ if (-not $Script) {
         }
         else {
             Write-Host "Invalid option, please try again`n"
+            Pause
         }
     } while ($true)
 }
