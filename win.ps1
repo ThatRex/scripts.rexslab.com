@@ -1,4 +1,4 @@
-$name = "script.rexslab.com"
+$name = "scripts.rexslab.com"
 $workDir = "$env:TEMP/$name"
 
 param(
