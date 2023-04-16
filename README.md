@@ -1,6 +1,6 @@
-# \*.scripts.rexslab.com
+# scripts.rexslab.com
 
-Master scripts for \*.scripts.rexslab.com
+Scripts for \*.scripts.rexslab.com
 
 # Usage
 
